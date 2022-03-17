@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    --cor1:#001d3d;
+    --cor2:#003566;
+    --cor3:#ffc300;
+    --cor4:#ffd60a;
+    --cor5:#fff07c;
+    --fonte1:'Roboto Mono', monospace;;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   
+
+ }
+
+
+ header {
+    background-color: #ffc300;
+    background-image:linear-gradient(90deg, #ffc300 0%, #ffd60a 50%, #ffd829 100%);
+
+ }
+div {
+    text-align: center;
+
+}
+ header > h1 {
+     margin: auto;
+     padding:10px;
+     text-align: center;
+     color:var(--cor1);
+     font-family: var(--fonte1);
+     font-size:3rem;
+ }
+ header > p {
+     text-align: center;
+     padding: 2.5rem;
+     color:var(--cor1);
+     font-family: var(--fonte1);
+     font-size:1.2rem;
+     font-weight: bold;
+ }
+
+.titulo-lista {
+    font-size:2.5rem;
+    font-family: var(--fonte1);
+}
+
+.lista {
+    background-image:linear-gradient(90deg, #003566 0%, #14213d 50%, #003566 100%);
+    color: var(--cor4);
+    padding:3em;
+}
+
+ li {
+     display: inline-block;
+     margin: auto;
+     padding: 0.8rem;
+     list-style-type: none;
+    
+ }
+
+ li > a {
+     color: var(--cor4);
+     margin: auto;
+     text-decoration: none;
+     font-size:1.3rem;
+     font-family: var(--fonte1);
+ }
+
+ li > a:hover {
+     text-decoration: underline;
+
+    
+ }
+ main {
+    margin: auto;
+    padding: 1.5rem;
+    line-height: 1.4rem;
+    
+ }
+
+ .estados {
+     padding:1rem;
+     font-size:2.5rem;
+     color:var(--cor1);
+     font-family: var(--fonte1);
+ }
+
+ .prf {
+    padding: 1rem;
+    font-size:1.5rem;
+    color:var(--cor1);
+    font-family: var(--fonte1);
+
+ }
+
+ address {
+     font-family:var(--fonte1);
+ }
+
+ mark {
+     background-color:#fca311 ;
+ }
+
+ mark:hover { background-color:#fff07c}
+
+ body::-webkit-scrollbar {
+     width:12px
+ }
+
+ body::-webkit-scrollbar-track {
+     background-color: var(--cor5);
+ }
+
+ body::-webkit-scrollbar-thumb {
+     background-color: var(--cor2);
+     border-radius: 12px;
+     border:2px solid var(--cor3);
+ }
+
+ button {
+    float:right;
+    z-index:0;
+    position:fixed;
+    bottom:20px;
+    right:15px;
+    font-size: 1.1rem;
+    padding:8px;
+    border: #fca311 solid 3px;
+    border-radius: 20px;
+    font-family: var(--fonte1);
+    font-weight:bold;
+    background-color: var(--cor5);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px
+    
+  }
+
+  section {
+      margin: auto;
+  }
+
+  .prf-logo {
+      background:url('imagens/prf-logo-pq.png');
+  }
+
+  footer {
+      margin: auto;
+      text-align: center;
+      font-family: var(--fonte1);
+      font-size:1.1rem;
+      font-weight: bold;
+      background-image:linear-gradient(90deg, #ffc300 0%, #ffd60a 50%, #ffd829 100%);
+      color: var(--cor1);
+      
+  }
+
+
+
+  
