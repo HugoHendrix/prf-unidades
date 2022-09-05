@@ -124,20 +124,22 @@ div {
  }
 
   
-    .scroll-container:before {
-      content: '';
-      display: block;
-      height: 100vh;
-      pointer-events: none;
-    }
-
+ button {
+    float:right;
+    z-index:0;
+    position:fixed;
+    bottom:20px;
+    right:15px;
+    font-size: 1.1rem;
+    padding:8px;
+    border: #fca311 solid 3px;
+    border-radius: 20px;
+    font-family: var(--fonte1);
+    font-weight:bold;
+    background-color: var(--cor5);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px
     
-    .scroll-container a {
-      position: sticky;
-      top: 88vh;
-      cursor: pointer;
-      font-size: 20px;
-    }
+  }
 
 
   section {
