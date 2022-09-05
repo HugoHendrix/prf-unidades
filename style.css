@@ -123,7 +123,7 @@ div {
      border:2px solid var(--cor3);
  }
 
-  // to hide the button when page first loaded
+  
     .scroll-container:before {
       content: '';
       display: block;
@@ -131,7 +131,7 @@ div {
       pointer-events: none;
     }
 
-    // fixed to right bottom of page
+    
     .scroll-container a {
       position: sticky;
       top: 88vh;
