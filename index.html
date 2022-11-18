@@ -52,7 +52,7 @@
           </nav>
       </div>
       <main>
-         <a href="#topo"><button>Voltar ao topo</button></a>
+         <a href="#topo" class="devolta" id="backToTop" title="Voltar ao Topo da Página."><button>Voltar ao topo</button></a>
           <section id="acre">
               <h1 class="estados">Acre</h1>
               <address>
@@ -3185,5 +3185,29 @@
      <p>Desenvolvido com o ♥ para o Time da <a href="https://grtranssat.com.br/" target="_blank">Gr Trans Sat.</a</a></p>
       <p>Informações retiradas do site <a href="https://www.gov.br/prf/pt-br/canais-de-atendimento/unidades-prf" target="_blank">www.gov.br</a> </p>
     </footer>
+    
+        <script src="script.js">
+                const btnTop = document.querySelector('#backToTop')
+
+// quando rolar a página 100px do topo para baixo, o botão aparece
+
+window.onscroll = function () {
+  scrollFunction()
+}
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    btnTop.style.display = 'block'
+  } else {
+    btnTop.style.display = 'none'
+  }
+}
+
+// quando clicar no botão, a pagina voltará para o inicio
+
+btnTop.addEventListener('click', function () {
+  window.scrollTo(0, 0)
+})
+      </script>
+
   </body>
 </html>
